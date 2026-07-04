@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta name="description" content="The Post-Date Debrief — 20 questions. Pure vibes. Zero HR involvement." />
+  <meta name="theme-color" content="#F2F0E2" />
+  <title>The Post-Date Debrief</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+<div class="phone">
+
+  <header>
+    <div class="brand">
+      <span class="mark">
+        <svg viewBox="0 0 40 40" width="26" height="26" aria-hidden="true">
+          <g fill="var(--ink)">
+            <ellipse cx="20" cy="10" rx="6" ry="9"/>
+            <ellipse cx="20" cy="30" rx="6" ry="9"/>
+            <ellipse cx="10" cy="20" rx="9" ry="6"/>
+            <ellipse cx="30" cy="20" rx="9" ry="6"/>
+          </g>
+          <circle cx="20" cy="20" r="5.5" fill="var(--yellow)" stroke="var(--ink)" stroke-width="1.5"/>
+        </svg>
+      </span>
+      debrief
+    </div>
+    <div class="pill">v1.0 &mdash; no science</div>
+  </header>
+
+  <div id="hero-block">
+    <div class="stickers">
+      <div class="sticker s1">rate the<br/>eye contact fr</div>
+      <div class="sticker s2">no explicit<br/>content, we classy</div>
+    </div>
+    <div class="hero">
+      <h1>Give last night a <span class="hl">glow up.</span><br/>Meet the debrief.</h1>
+      <p>20 questions. Pure vibes. Zero HR involvement. Tap an answer, no overthinking, your gut already knows.</p>
+    </div>
+  </div>
+
+  <div id="quiz-block">
+    <div class="progress-wrap">
+      <svg id="daisy-progress" viewBox="0 0 40 40" width="34" height="34" aria-hidden="true">
+        <g id="petals" fill="#EFEBD8" stroke="var(--ink)" stroke-width="1.2">
+          <ellipse cx="20" cy="10" rx="6" ry="9"/>
+          <ellipse cx="20" cy="30" rx="6" ry="9"/>
+          <ellipse cx="10" cy="20" rx="9" ry="6"/>
+          <ellipse cx="30" cy="20" rx="9" ry="6"/>
+        </g>
+        <circle cx="20" cy="20" r="5.5" fill="var(--yellow)" stroke="var(--ink)" stroke-width="1.2"/>
+      </svg>
+      <div class="progress-text" style="flex:1;">
+        <span><b id="qcount">1</b> / 20 &mdash; <span id="round-label">Chemistry &amp; Vibes</span></span>
+        <div class="bar-track"><div class="bar-fill" id="bar"></div></div>
+      </div>
+    </div>
+
+    <div class="section-tag" id="tag">ROUND 1 · CHEMISTRY &amp; VIBES</div>
+
+    <div class="card">
+      <div class="q-num" id="qnum-label">QUESTION 1 OF 20</div>
+      <div class="q-text" id="qtext"></div>
+      <div class="options" id="options"></div>
+    </div>
+
+    <div class="nav-row">
+      <button type="button" class="btn ghost" id="backBtn">&larr; back</button>
+      <button type="button" class="btn primary" id="nextBtn">next &rarr;</button>
+    </div>
+  </div>
+
+  <div class="results" id="results-block">
+    <div class="section-tag">FINAL VERDICT</div>
+    <div class="card">
+      <div class="verdict-tag" id="v-tag">the results are in...</div>
+      <div class="verdict-title" id="v-title"></div>
+      <div class="verdict-body" id="v-body"></div>
+
+      <div class="stat-row">
+        <div class="stat a"><span class="n" id="count-a">0</span><span class="l">chaotic</span></div>
+        <div class="stat b"><span class="n" id="count-b">0</span><span class="l">slow burn</span></div>
+        <div class="stat c"><span class="n" id="count-c">0</span><span class="l">chill</span></div>
+      </div>
+
+      <div class="final-box">
+        <p>SIGN BELOW TO MAKE IT LEGALLY BINDING (it is not legally binding)</p>
+        <div id="checklist"></div>
+      </div>
+
+      <div style="margin-top:14px; font-size:11px; color:#6b6b72;">
+        Signature: <span style="border-bottom:1.5px solid var(--ink); display:inline-block; width:120px;">&nbsp;</span>
+        &nbsp; Date: <span style="border-bottom:1.5px solid var(--ink); display:inline-block; width:70px;">&nbsp;</span>
+      </div>
+    </div>
+    <div class="restart" id="restartBtn" role="button" tabindex="0">↺ run it back / retake the debrief</div>
+  </div>
+
+  <footer>
+    made with unreasonable confidence and<br/>zero (0) peer-reviewed sources
+  </footer>
+
+</div>
+
+<div id="sync-status" class="sync-status" role="status" aria-live="polite"></div>
+
+<script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
